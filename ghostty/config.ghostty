@@ -1,9 +1,0 @@
-# Ghostty is configured using a text-based configuration file.
-# The configuration file is named config.ghostty (or config before 1.2.3).
-# See docs: https://ghostty.org/docs/config
-
-# You can split configuration into multiple files by using config-file key.
-config-file = ./settings.conf
-
-# If the vlaue is prefixed with ?, the file is optional.
-config-file = ?./zenbones-zenwritten-dark.conf
