@@ -41,7 +41,7 @@ Singleton {
     readonly property color islandDim: "#33ffffff"
 
     readonly property int islandTop: 6                 // gap from the top of the screen
-    readonly property int islandGap: 6                 // extra space kept free below the island
+    readonly property int islandGap: 0                 // extra space kept free below the island
     readonly property int islandHeight: 36             // collapsed height
     readonly property int islandWidth: 130             // collapsed min width, nothing playing
     readonly property int islandMediaWidth: 210        // collapsed min width, media playing
