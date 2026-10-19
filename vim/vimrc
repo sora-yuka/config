@@ -98,3 +98,5 @@ set laststatus=2
 
 
 let b:ale_linters = ['pyflakes', 'flake8', 'pylint']
+
+let g:auto_save = 1
