@@ -74,7 +74,6 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'jiangmiao/auto-pairs'
 Plug '907th/vim-auto-save'
-Plug 'w0rp/ale'
 
 call plug#end()
 
@@ -97,6 +96,6 @@ set statusline+=\ ascii:\ %b\ row:\ %l\ col:\ %c\ percent:\ %p%%
 set laststatus=2
 
 
-let b:ale_linters = ['pyflakes', 'flake8', 'pylint']
+" Plugin settings
 
 let g:auto_save = 1
