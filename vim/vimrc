@@ -1,0 +1,100 @@
+" Disable compatibility with vi which can cause an unexpected issues.
+set nocompatible
+
+" Enable type file detection.
+filetype on
+
+" Enable plugins and load plugin for the detected file type.
+filetype plugin on
+
+" Load an indent file for the detected file type.
+filetype indent on
+
+" Set tab width to 4 columns.
+set tabstop=4 
+
+" Set shift width to 4 spaces.
+set shiftwidth=4
+
+" Use space characters instead of tabs.
+set expandtab
+
+" Turn syntax highlighting on
+syntax on
+
+" Add numbers to each line on the left-hand side.
+set number
+
+" Do no save backup files.
+set nobackup
+
+" Do not let cursor scroll below or above N number of lines when scrolling.
+set scrolloff=10
+
+" Do not wrap lines. Allow long lines to extend as far as the line goes.
+set nowrap
+
+" While searching through a file incrementally highlight matching characters.
+set incsearch
+
+" Ignore capital letters during search.
+set ignorecase
+
+" Set encoding
+set encoding=UTF-8
+
+" Show partial command you type in the last line of the screen.
+set showcmd
+
+" Show matching words during search.
+set showmatch
+
+" Use highlighting when doing search.
+set hlsearch
+
+" Set the commands to save in history.
+set history=1000
+
+" Enable auto completion menu after pressing TAB.
+set wildmenu
+
+" Make wildmenu behave like similar to Bash completion.
+set wildmode=list:longest
+
+" There are certail files that we would never want to edit with Vim.
+" Wildmenu will ignore files with these extensions.
+set wildignore=*.docs,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xlsx
+
+" Erase ~ characters on left side.
+highlight EndOfBuffer ctermfg=black guifg=bg
+
+" PLUGINS
+
+call plug#begin('~/.vim/plugged')
+
+Plug 'jiangmiao/auto-pairs'
+Plug '907th/vim-auto-save'
+Plug 'w0rp/ale'
+
+call plug#end()
+
+
+" STATUS LINE
+
+" Clear status line when vimrc is reloaded.
+set statusline=
+
+" Status line left side.
+set statusline+=\ %F\ %M\ %Y\ %R 
+
+" Use a divider to separate the left side from the right side.
+set statusline+=%=
+
+" Status line right side.
+set statusline+=\ ascii:\ %b\ row:\ %l\ col:\ %c\ percent:\ %p%%
+
+" Show status on the second to last line.
+set laststatus=2
+
+
+let b:ale_linters = ['pyflakes', 'flake8', 'pylint']
