@@ -14,6 +14,7 @@ spawn-at-startup "qs"
 
 // To run a shell command (with variables, pipes, etc.), use spawn-sh-at-startup:
 // spawn-sh-at-startup "qs -c ~/source/qs/MyAwesomeShell"
+spawn-sh-at-startup "swaybg -i ~/Pictures/wallpapers/general/wheat-dark.jpg -m fill"
 
 hotkey-overlay {
     // Uncomment this line to disable the "Important Hotkeys" pop-up at startup.
@@ -97,6 +98,8 @@ window-rule {
 }
 
 window-rule {
+    match app-id="Nautilus"
+    match app-id="helium"
     match app-id="VSCode"
     opacity 0.90
 
@@ -113,7 +116,7 @@ window-rule {
     }
 }
 
-window-rule {
+/-window-rule {
     match app-id="helium"
 
     opacity 0.90
@@ -130,4 +133,3 @@ layer-rule {
         xray false
     }
 }
-
