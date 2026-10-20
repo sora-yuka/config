@@ -112,6 +112,15 @@ window-rule {
     }
 }
 
+window-rule {
+    match app-id="spotify"
+    opacity 0.8
+
+    background-effect {
+        blur true
+    }
+}
+
 layer-rule {
     match namespace="^launcher$"
     background-effect {
