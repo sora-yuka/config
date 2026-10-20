@@ -19,6 +19,8 @@ zinit light zsh-users/zsh-autosuggestions
 zinit light zsh-users/zsh-history-substring-search
 zinit light zdharma-continuum/fast-syntax-highlighting
 
+unsetopt nomatch
+
 bindkey -e
 
 bindkey '^[[1;5C' forward-word
