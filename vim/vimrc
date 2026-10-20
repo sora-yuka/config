@@ -96,6 +96,14 @@ set statusline+=\ ascii:\ %b\ row:\ %l\ col:\ %c\ percent:\ %p%%
 set laststatus=2
 
 
+" Tab settings
+augroup filtype_settings
+    autocmd!
+    autocmd FileType python     setlocal tabstop=4 shiftwidth=4 softtabstop=4 expandtab
+    autocmd FileType javascript setlocal tabstop=2 shiftwidth=2 softtabstop=2 expandtab
+    autocmd FileType nix        setlocal tabstop=2 shiftwidth=2 softtabstop=2 expandtab
+augroup END
+
 " Plugin settings
 
 let g:auto_save = 1
