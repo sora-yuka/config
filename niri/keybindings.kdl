@@ -9,10 +9,9 @@ binds {
     Mod+Shift+Slash { show-hotkey-overlay; }
 
     // Suggested binds for running programs: terminal, app launcher, screen locker.
-    Mod+T hotkey-overlay-title="Open terminal" repeat=false { spawn "ghostty"; }
-    // Mod+Space hotkey-overlay-title="Run an app launcher" { spawn "rofi" "-show" "drun"; }
-    Mod+Space { spawn "qs" "ipc" "call" "launcher" "toggle"; }
-    // Super+Alt+L hotkey-overlay-title="Lock the Screen: swaylock" { spawn "swaylock"; }
+    Mod+T repeat=false { spawn "ghostty"; }
+    Mod+Space repeat=false { spawn "qs" "ipc" "call" "launcher" "toggle"; }
+    Mod+E repeat=false { spawn "nautilus"; }
 
     // Use spawn-sh to run a shell command. Do this if you need pipes, multiple commands, etc.
     // Note: the entire command goes as a single argument. It's passed verbatim to `sh -c`.
@@ -43,6 +42,7 @@ binds {
 
     // System keybinds
     Mod+O repeat=false { toggle-overview; }
+    Mod+Shift+O { toggle-window-rule-opacity; }
     Mod+Q repeat=false { close-window; }
 
     Mod+Left  { focus-column-left; }
@@ -201,8 +201,7 @@ binds {
     Mod+Escape allow-inhibiting=false { toggle-keyboard-shortcuts-inhibit; }
 
     // The quit action will show a confirmation dialog to avoid accidental exits.
-    Mod+Alt+Q { quit; }
-    Ctrl+Alt+Delete { quit; }
+    Mod+Alt+Q { quit skip-confirmation=true; }
 
     // Powers off the monitors. To turn them back on, do any input like
     // moving the mouse or pressing any other key.
