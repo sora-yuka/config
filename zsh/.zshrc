@@ -6,6 +6,7 @@ fi
 source "$ZINIT_HOME/zinit.zsh"
 
 export PATH="$HOME/.local/bin:$PATH"
+export PATH="$PATH:/$HOME/.spicetify"
 
 if [[ "$TERM_PROGRAM" == "ghostty" ]]; then
     eval "fastfetch"
@@ -27,5 +28,17 @@ bindkey '^[[3;5~' kill-word
 
 bindkey '^[[H' beginning-of-line
 bindkey '^[[F' end-of-line
+
+alias gc='git commit -m'
+alias ga='git add'
+alias gps='git push origin main'
+alias gpl='git pull origin main'
+
+alias ui='uv init --no-package'
+alias ur='uv run python'
+alias ua='uv add'
+alias um='uv remove'
+alias us='uv sync'
+alias ut='uv tree'
 
 eval "$(oh-my-posh init zsh --config ~/.config/oh-my-posh/config.json)"
