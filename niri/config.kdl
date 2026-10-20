@@ -2,19 +2,7 @@ include "input.kdl"
 include "outputs.kdl"
 include "keybindings.kdl"
 include "layout.kdl"
-
-// Add lines like this to spawn processes at startup.
-// Note that running niri as a session supports xdg-desktop-autostart,
-// which may be more convenient to use.
-// See the binds section below for more spawn examples.
-
-// This line starts waybar, a commonly used bar for Wayland compositors.
-// spawn-at-startup "waybar"
-spawn-at-startup "qs"
-
-// To run a shell command (with variables, pipes, etc.), use spawn-sh-at-startup:
-// spawn-sh-at-startup "qs -c ~/source/qs/MyAwesomeShell"
-spawn-sh-at-startup "swaybg -i ~/Pictures/wallpapers/general/wheat-dark.jpg -m fill"
+include "miscellaneous.kdl"
 
 hotkey-overlay {
     // Uncomment this line to disable the "Important Hotkeys" pop-up at startup.
@@ -98,10 +86,18 @@ window-rule {
 }
 
 window-rule {
-    match app-id="Nautilus"
     match app-id="helium"
     match app-id="VSCode"
-    opacity 0.90
+    opacity 0.95
+
+    background-effect {
+        blur true
+    }
+}
+
+window-rule {
+    match app-id="Nautilus"
+    opacity 0.80
 
     background-effect {
         blur true
@@ -110,16 +106,6 @@ window-rule {
 
 window-rule {
     match app-id="zen"
-
-    background-effect {
-        blur true
-    }
-}
-
-/-window-rule {
-    match app-id="helium"
-
-    opacity 0.90
 
     background-effect {
         blur true
