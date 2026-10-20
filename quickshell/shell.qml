@@ -1,20 +1,4 @@
-// shell.qml: entry point. Keeps the open/closed state and the IPC toggle.
-//
-// ---- niri setup (~/.config/niri/config.kdl) ----
-//
-//   spawn-at-startup "qs"
-//
-//   binds {
-//       Mod+Space { spawn "qs" "ipc" "call" "launcher" "toggle"; }
-//   }
-//
-//   layer-rule {
-//       match namespace="^launcher$"
-//       background-effect {
-//           xray false
-//       }
-//   }
-//
+//@ pragma IconTheme Colloid-Dark
 // Run `niri msg layers` while the launcher is open to confirm the namespace.
 // ------------------------------------------------
 //
