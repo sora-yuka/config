@@ -1,0 +1,33 @@
+// Animation settings.
+// The wiki explains how to configure individual animatinos:
+// https://niri-wm.github.io/niri/Configuration:-Animations
+animations {
+    // Uncomment to turn off all animations.
+    // off
+
+    // Slow down all animations by this factor. Values bellow 1 speeds them up instead.
+    slowdown 2
+
+    // Currently, niri supports only 5 curves.
+    // ease-out-quad, -cubic, -expo, linear, cubic-bezier
+    window-open {
+        duration-ms 200
+        curve "ease-out-expo"
+        // curve-bezier 0.05 0.7 0.1 1
+    }
+
+    workspace-switch {
+        // damping-ratio goes from 0.1 to 10.0
+        // Lower stiffness will result in a slower animation more prone to oscilltion.
+        // Set epsilon to a lower value if the animation "jumps" at the end.
+        spring damping-ratio=1.5 stiffness=2000 epsilon=0.001
+    }
+
+    horizontal-view-movement {
+        spring damping-ratio=2.0 stiffness=2500 epsilon=0.0001
+    }
+
+    window-resize {
+        spring damping-ratio=1.0 stiffness=5000 epsilon=0.001
+    }
+}

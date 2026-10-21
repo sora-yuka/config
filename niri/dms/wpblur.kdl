@@ -1,0 +1,8 @@
+
+
+blur {
+    passes 3
+    offset 4.0
+    noise 0.05
+    saturation 1.8
+}

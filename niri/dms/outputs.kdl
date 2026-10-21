@@ -1,0 +1,15 @@
+// Find more information on the wiki:
+// https://niri-wm.github.io/niri/Configuration:-Outputs
+output "HDMI-A-1" { // run 'niri msg outputs' while inside a niri instance to list all outputs
+    // can something like -> mode "2560x1440@180"
+    // for QHD, set scale to 1.5
+    focus-at-startup
+    mode "1920x1080@75.002"
+    scale 1
+
+    backdrop-color "#2b2b2b"
+
+    hot-corners {
+        bottom-left
+    }
+}

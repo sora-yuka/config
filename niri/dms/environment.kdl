@@ -1,0 +1,13 @@
+// Change the theme and size of the cursor.
+// Niri looks for cursor in ~/.icons/
+cursor {
+    xcursor-theme "GoogleDot-Black" // should be cursor's dir name
+    xcursor-size 22
+    hide-when-typing
+    hide-after-inactive-ms 5000
+}
+
+// Override environment variables for processes spawned by niri.
+environment {
+    QS_ICON_THEME "Colloid-Dark" // should be icon theme's dirname in ~/.local/share/icons/
+}

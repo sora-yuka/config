@@ -1,0 +1,16 @@
+// Layer rules let you adjust behavior for individual layer-shell surfaces.
+// Find more information on the wiki:
+// https://niri-wm.github.io/niri/Configuration:-Layer-Rules
+layer-rule {
+    match namespace="^launcher$"
+    background-effect {
+        blur true
+        xray false
+        saturation 3
+    }
+}
+
+layer-rule {
+    match namespace="^wallpaper$"
+    place-within-backdrop true
+}
