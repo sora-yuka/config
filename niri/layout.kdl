@@ -5,7 +5,7 @@ prefer-no-csd
 // https://niri-wm.github.io/niri/Configuration:-Layout
 layout {
     // Set gaps around windows in logical pixels.
-    gaps 8
+    gaps 48
 
     // When to center a column when changing focus, options are:
     // - "never", default behavior, focusing an off-screen column will keep at the left
@@ -104,15 +104,27 @@ layout {
         color "#0007"
     }
 
+    // Controls the appearance of the tab indicator 
+    // that appears next columns in tabbed display mode.
+    tab-indicator {
+        width 4
+        gap 8
+        gaps-between-tabs 10
+        corner-radius 2 // half of the width
+        length total-proportion=0.4
+        position "left"
+        active-color "#fcf5a5"
+        inactive-color "#434345"
+    }
+
     // Struts shrink the area occupied by windows, similarly to layer-shell panels.
     // You can think of them as a kind of outer gaps. They are set in logical pixels.
     // Left and right struts will cause the next window to the side to always be visible.
-    // Top and bottom struts will simply add outer gaps in addition to the area occupied by
     // layer-shell panels and regular gaps.
     struts {
         left 20
         right 20
-        // top 0
-        bottom 20 
+        top -40
+        bottom -20
     }
 }
