@@ -185,5 +185,10 @@ window-rule {
 
 window-rule {
     match app-id="Nautilus"
-    default-fix-height { proportion 0.6; }
+    default-fixed-height { proportion 0.6; }
+}
+
+window-rule {
+    match app-id="ghostty"
+    default-fixed-height { proportion 0.7; }
 }
