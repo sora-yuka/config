@@ -195,5 +195,5 @@ window-rule {
 
 window-rule {
   match title="Waypaper Engine"
-  open-mazimized true
+  open-maximized true
 }
