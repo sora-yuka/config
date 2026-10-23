@@ -66,7 +66,6 @@
         { 
           "type": "command",
           "key":  " ",
-          "shell": "/bin/zsh",
           "text": "echo '名誉を失う前に死ぬ'",
           "format": "{1}",
         },
