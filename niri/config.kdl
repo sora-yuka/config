@@ -14,10 +14,9 @@ prefer-no-csd
 
 // Spawn process at startup.
 spawn-at-startup "qs"
-spawn-at-startup "waypaper-engine"
 
 // Spawn shell-command at startup.
-spawn-sh-at-startup "swaybg -i ~/Pictures/wallpapers/general/filmBlackHole.png -m fill"
+// spawn-sh-at-startup "swaybg -i ~/Pictures/wallpapers/general/filmBlackHole.png -m fill"
 
 hotkey-overlay {
     skip-at-startup
