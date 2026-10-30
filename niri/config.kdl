@@ -17,6 +17,7 @@ spawn-at-startup "qs"
 
 // Spawn shell-command at startup.
 // spawn-sh-at-startup "swaybg -i ~/Pictures/wallpapers/general/filmBlackHole.png -m fill"
+spawn-at-startup "waypaper-engine"
 
 hotkey-overlay {
     skip-at-startup
