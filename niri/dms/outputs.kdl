@@ -1,6 +1,6 @@
 // Find more information on the wiki:
 // https://niri-wm.github.io/niri/Configuration:-Outputs
-output "HDMI-A-1" { // run 'niri msg outputs' while inside a niri instance to list all outputs
+output "DP-2" { // run 'niri msg outputs' while inside a niri instance to list all outputs
     // can something like -> mode "2560x1440@180"
     // for QHD, set scale to 1.5
     focus-at-startup
