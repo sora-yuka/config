@@ -5,7 +5,7 @@ output "DP-2" { // run 'niri msg outputs' while inside a niri instance to list a
     // for QHD, set scale to 1.5
     focus-at-startup
     mode "2560x1440@180.000"
-    scale 1.5
+    scale 1.25
 
     backdrop-color "#2b2b2b"
 
