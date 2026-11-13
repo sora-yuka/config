@@ -27,3 +27,49 @@ hotkey-overlay {
 // A ~ at the front will be expanded to the home directory.
 // The path is formatted with strftime(3) to give you the screenshot date and time.
 screenshot-path "~/Pictures/screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png"
+animations {
+    // off
+
+    workspace-switch {
+        spring damping-ratio=1.0 stiffness=500 epsilon=0.0001
+    }
+
+    window-open {
+        duration-ms 320
+        curve "cubic-bezier" 0.05 0.7 0.1 1.0
+    }
+
+    window-close {
+        duration-ms 220
+        curve "cubic-bezier" 0.2 0.0 0.0 1.0
+    }
+
+    horizontal-view-movement {
+        spring damping-ratio=1.0 stiffness=500 epsilon=0.0001
+    }
+
+    window-movement {
+        spring damping-ratio=1.0 stiffness=500 epsilon=0.0001
+    }
+
+    window-resize {
+        spring damping-ratio=1.0 stiffness=500 epsilon=0.0001
+    }
+
+    config-notification-open-close {
+        spring damping-ratio=0.8 stiffness=700 epsilon=0.001
+    }
+
+    screenshot-ui-open {
+        duration-ms 280
+        curve "cubic-bezier" 0.05 0.7 0.1 1.0
+    }
+
+    overview-open-close {
+        spring damping-ratio=1.0 stiffness=550 epsilon=0.0001
+    }
+
+    recent-windows-close {
+        spring damping-ratio=1.0 stiffness=600 epsilon=0.001
+    }
+}
