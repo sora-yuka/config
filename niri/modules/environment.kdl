@@ -1,0 +1,16 @@
+// Personalize theme and cursor.
+
+// By default niri looks for cursor in `~/.icons`
+cursor {
+    xcursor-theme "GoogleDot-Blue" // Cursor dirname
+    xcursor-size 22
+    hide-when-typing
+    hide-after-inactive-ms 3000
+}
+
+// Override environment variables for processes spawned by niri.
+environment {
+    // Should be icon theme's dirname in `~/.local/share/icons`
+    QS_ICON_THEME "Colloid-Dark"
+    QT_QPA_PLATFORMTHEME "qt6ct"
+}

@@ -1,0 +1,40 @@
+/*
+Settings that influence how windows are positioned and sized.
+
+Find more information on the wiki:
+https://niri-wm.github.io/niri/Configuration:-Layout
+*/
+
+layout {
+    gaps 24
+    center-focused-column "always"
+    always-center-single-column
+    background-color "transparent"
+
+    preset-column-widths {
+        // The default preset widths are 1/3, 1/2 and 2/3 of the output.
+        proportion 0.33333; proportion 0.5; proportion 0.66667
+    }
+
+    default-column-width { proportion 0.5; }
+    focus-ring { off; }
+
+    shadow {
+        on
+        softness 30
+        spread 2
+        offset x=0 y=5
+        color "#0007"
+    }
+
+    tab-indicator {
+        width 4
+        gap 8
+        gaps-between-tabs 10
+        corner-radius 2 // half of the width
+        length total-proportion=0.4
+        position "left"
+        active-color "#fcf5a5"
+        inactive-color "#434345"
+    }
+}

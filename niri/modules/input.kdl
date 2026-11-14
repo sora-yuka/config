@@ -1,14 +1,16 @@
-// Input device configuration.
-// Full list of options on the wiki:
-// https://niri-wm.github.io/niri/Configuration:-Input
+/*
+Input device configuration.
+
+Full list of options on the wiki:
+https://niri-wm.github.io/niri/Configuration:-Input
+*/
 
 input {
     keyboard {
         xkb {
-            layout "us,ru"
+            layout  "us,ru"
             options "grp:shift_caps_toggle"
         }
-        
         numlock
     }
 
@@ -18,6 +20,5 @@ input {
     }
 
     mouse
-
     trackpoint
 }

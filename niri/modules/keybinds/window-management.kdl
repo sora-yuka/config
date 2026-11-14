@@ -1,0 +1,20 @@
+binds {
+    Mod+Q       repeat=false { close-window; }
+    Mod+F       repeat=false { maximize-column; }
+    Mod+M       repeat=false { fullscreen-window; }
+
+    // Move the focused window between the floating and the tiling layout.
+    Mod+V       repeat=false { toggle-window-floating; }
+    Mod+Shift+V repeat=false { switch-focus-between-floating-and-tiling; }
+
+    // Windows in this column will appear as vertical tabs,
+    // rather than stacked on top of each other.
+    // Use Mod+J (Mod+Down) to switch between stacked columns
+    Mod+W       repeat=false { toggle-column-tabbed-display; }
+
+    /*
+    The action switches the transparency of the active window,
+    but only works if a rule with translucency is already set for this window.
+    */
+    Mod+Shift+O repeat=false { toggle-window-rule-opacity; }
+}

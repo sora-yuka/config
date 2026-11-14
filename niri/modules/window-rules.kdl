@@ -1,0 +1,37 @@
+/*
+Window rules let you adjust behavior for individual windows.
+
+Find more information on the wiki:
+https://niri-wm.github.io/niri/Configuration:-Window-Rules
+*/
+
+overview { zoom 0.5; }
+
+window-rule {
+    geometry-corner-radius 12
+    clip-to-geometry true
+
+    background-effect { blur true; }
+}
+
+window-rule {
+    match app-id="zen"
+    match app-id="helium"
+
+    open-maximized true
+}
+
+window-rule {
+    match app-id="code"
+    match app-id="vscode"
+    match app-id="VSCode"
+
+    opacity 0.9
+
+    background-effect {
+        blur true
+        noise 0.2
+        saturation 5
+    }
+}
+

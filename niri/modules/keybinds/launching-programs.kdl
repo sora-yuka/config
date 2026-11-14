@@ -1,0 +1,7 @@
+binds {
+    // Suggested binds for running programs: terminal, launcher, screen locker.
+    Mod+Shift+Slash    { show-hotkey-overlay; }
+
+    Mod+T repeat=false { spawn "ghostty"; }
+    Mod+E repeat=false { spawn "nautilus"; }
+}

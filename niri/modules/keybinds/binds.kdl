@@ -1,0 +1,16 @@
+/*
+Find more information on the wiki:
+https://niri-wm.github.io/niri/Configuration:Key-Bindings
+*/
+
+include "column-and-window-sizing.kdl"
+include "column-grouping.kdl"
+include "focus-navigation.kdl"
+include "launching-programs.kdl"
+include "media-and-hardware.kdl"
+include "mouse-wheel.kdl"
+include "moving-windows-and-columns.kdl"
+include "screenshots.kdl"
+include "session-and-power.kdl"
+include "window-management.kdl"
+include "workspaces.kdl"

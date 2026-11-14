@@ -1,0 +1,13 @@
+/*
+Find more information on the wiki:
+https://niri-wm.github.io/niri/Configuration:-Outputs
+*/
+
+// Run `niri msg outputs` to list all outputs
+output "DP-2" {
+    focus-at-startup
+    mode "2560x1440@180.000"
+    scale 1.25
+    backdrop-color "#171717"
+    hot-corners { bottom-left; }
+}

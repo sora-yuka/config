@@ -1,0 +1,18 @@
+binds {
+    Mod+Ctrl+H     repeat=false  { move-column-left; }
+    Mod+Ctrl+Left  repeat=false  { move-column-left; }
+
+    Mod+Ctrl+L     repeat=false { move-column-right; }
+    Mod+Ctrl+Right repeat=false { move-column-right; }
+
+    Mod+Ctrl+J     repeat=false { move-window-down; }
+    Mod+Ctrl+Down  repeat=false { move-window-down; }
+
+    Mod+Ctrl+K     repeat=false { move-window-up; }
+    Mod+Ctrl+Up    repeat=false { move-window-up; }
+
+    Mod+Ctrl+Home  repeat=false { move-column-to-first; }
+    Mod+Ctrl+End   repeat=false { move-column-to-last; }
+
+    // maybe add binds for second monitor?
+}
